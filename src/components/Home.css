@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home h2{
+    font-size: 2.5rem;
+}
+
+.home span {
+  color: #646cff;
+}
+
+.home p {
+  font-size: 0.6rem;
+}
+
+.home a {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px;
+  margin-left: -5px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.home a:hover {
+  border-color: #646cff;
+}
