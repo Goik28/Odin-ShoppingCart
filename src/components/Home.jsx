@@ -11,8 +11,10 @@ export function Home() {
         </p>
       </h1>
       <h2>
-        Here, we <span>PRETEND</span> to sell fake products,{" "}
-          <a href="/products"> check our items!</a>
+        Here, we <span>PRETEND</span> to sell fake stuff.
+        <p className="checkItems">
+          <a href="/products"> Check our items!</a>
+        </p>
       </h2>
     </main>
   );

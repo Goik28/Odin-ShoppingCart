@@ -2,19 +2,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  margin: 0px 10px;
 }
 
-.home h2{
-    font-size: 2.5rem;
+.home h1 {
+  font-size: 5em;
+  line-height: 1.1;
+}
+
+.home h2 {
+  font-size: 3.5rem;
 }
 
 .home span {
+    font-size: 1.5em;
   color: #646cff;
 }
 
 .home p {
   font-size: 0.6rem;
+}
+
+.home .checkItems{
+    font-size: 1.5rem;
+    text-align: right;
 }
 
 .home a {
