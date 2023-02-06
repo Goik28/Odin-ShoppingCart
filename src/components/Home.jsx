@@ -10,6 +10,7 @@ export function Home() {
           <span>REACT</span> skills. Read the footer dudes!
         </p>
       </h1>
+      <div className="clipPath"></div>
       <h2>
         Here, we <span>PRETEND</span> to sell fake stuff.
         <p className="checkItems">

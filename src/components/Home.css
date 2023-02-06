@@ -6,16 +6,18 @@
 }
 
 .home h1 {
+    margin: auto;
   font-size: 5em;
   line-height: 1.1;
 }
 
 .home h2 {
+    margin: auto;
   font-size: 3.5rem;
 }
 
 .home span {
-    font-size: 1.5em;
+  font-size: 1.5em;
   color: #646cff;
 }
 
@@ -23,9 +25,9 @@
   font-size: 0.6rem;
 }
 
-.home .checkItems{
-    font-size: 1.5rem;
-    text-align: right;
+.home .checkItems {
+  font-size: 1.5rem;
+  text-align: right;
 }
 
 .home a {
@@ -41,4 +43,16 @@
 
 .home a:hover {
   border-color: #646cff;
+}
+
+.home .clipPath{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #0000001d 0%, #242424 90%);
+    height: 95%;
+    width: 100%;
+    clip-path: polygon(59% 27%, 52% 82%, 71% 44%, 88% 10%, 64% 74%, 89% 89%, 21% 18%, 48% 63%, 9% 46%, 51% 59%);
 }

@@ -2,19 +2,19 @@ import "./Header.css";
 
 export function Header() {
   return (
-    <header>
-      <div className="storeName">
-        <div>ANOTHER</div>
-        <div>fake store</div>
-      </div>
-      <div className="nav">
+    <div className="navHeader">
+      <header>
+        <div className="storeName">ANOTHER</div>
+        <div className="subName">fake store</div>
+      </header>
+      <nav>
         <a href="/">HOME</a>
         <a href="/products">PRODUCTS</a>
-      </div>
+      </nav>
       <div className="cart">
-        <div className="cartIcon"></div>
-        <div className="cartNotification"></div>
+        <div className="cartIcon">C</div>
+        <div className="cartNotification">0</div>
       </div>
-    </header>
+    </div>
   );
 }

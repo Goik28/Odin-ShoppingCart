@@ -1,0 +1,37 @@
+.navHeader{
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border: solid black 0px;
+    border-bottom-width: 1px;
+    background-color: #242424;
+}
+
+.navHeader .storeName{
+    font-size: 3.5rem;
+    color: #646cff;
+}
+
+.navHeader .subName{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.navHeader header{
+    margin-left: 25px;
+}
+
+.navHeader nav{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navHeader .cart{
+    margin-right: 25px;
+}
