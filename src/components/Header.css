@@ -1,39 +1,73 @@
-.navHeader{
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border: solid black 0px;
-    border-bottom-width: 1px;
-    background-color: #242424;
+.navHeader {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border: solid black 0px;
+  border-bottom-width: 1px;
 }
 
-.navHeader .storeName{
-    font-size: 3.5rem;
-    color: #646cff;
+.navHeader .storeName {
+  font-size: 3.5rem;
+  color: #646cff;
 }
 
-.navHeader .subName{
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: -5px;
+.navHeader .subName {
+  font-size: 0.5rem;
+  text-align: center;
+  margin-top: -5px;
 }
 
-.navHeader header{
-    margin-left: 25px;
+.navHeader header {
+  margin-left: 25px;
 }
 
-.navHeader nav{
-    flex: 1 1 auto;
-    max-width: 200px;
-    margin: 0 25px;
-    display: flex;
-    justify-content: space-between;
+.navHeader nav {
+  flex: 1 1 auto;
+  max-width: 200px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
-.navHeader .cart{
-    margin-right: 25px;
+.navHeader .cart {
+  margin-right: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navHeader .cartIcon {
+  width: 50px;
+  filter: invert();
+}
+.navHeader .cartNotification {
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  z-index: 2;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.navHeader a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.25s;
+  padding: 5px;
+}
+
+.navHeader a:visited {
+  color: inherit;
+}
+
+.navHeader a:hover {
+  border-color: #646cff;
 }
