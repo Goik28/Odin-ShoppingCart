@@ -1,5 +1,6 @@
 export const products = [
   {
+    id: 1,
     src: "/angry.png",
     alt: "Angry man",
     name: "Angry",
@@ -7,6 +8,7 @@ export const products = [
     price: "$1.99",
   },
   {
+    id: 2,
     src: "/confused.png",
     alt: "Confused man",
     name: "Confused",
@@ -14,6 +16,7 @@ export const products = [
     price: "$0.00",
   },
   {
+    id: 3,
     src: "/cry.png",
     alt: "Sad man",
     name: "Sad",
@@ -21,6 +24,7 @@ export const products = [
     price: "$3.99",
   },
   {
+    id: 4,
     src: "/disappointed.png",
     alt: "Disappointed man",
     name: "Disappointed",
@@ -28,6 +32,7 @@ export const products = [
     price: "$99.99",
   },
   {
+    id: 5,
     src: "/disgusted.png",
     alt: "Disgusted man",
     name: "Disgusted",

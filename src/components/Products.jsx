@@ -9,8 +9,8 @@ export function Products({ productsList }) {
       </p>
       <div className="clipPath"></div>
       <ul>
-        {productsList.map((product, index) => {
-          return <Product key={index} product={product}></Product>;
+        {productsList.map((product) => {
+          return <Product key={product.id} product={product}></Product>;
         })}
       </ul>
     </main>

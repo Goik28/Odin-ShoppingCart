@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { ShoppingCart } from "./ShoppingCart";
 
 export function Header() {
   return (
@@ -12,10 +13,7 @@ export function Header() {
         <Link to={"/"}>Home</Link>
         <Link to={"/products"}>Products</Link>
       </nav>
-      <div className="cart">
-        <img className="cartIcon" src="/shopping-cart.png" alt="Shopping-Cart" />
-        <div className="cartNotification">0</div>
-      </div>
+      <ShoppingCart shoppingCart={[]}/>
     </div>
   );
 }
