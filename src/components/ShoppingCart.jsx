@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CartItem } from "./CartItem";
 import "./ShoppingCart.css";
 
-export function ShoppingCart({ shoppingCart}) {
+export function ShoppingCart({ shoppingCart }) {
   const [expanded, setExpanded] = useState(false);
 
   function isExpanded() {
@@ -24,16 +24,20 @@ export function ShoppingCart({ shoppingCart}) {
     );
   }
 
+  function showNotificationNumber() {
+    if (shoppingCart.length > 0) {
+      return (
+        <div className="cartNotification">
+          {shoppingCart.length > 9 ? "9+" : shoppingCart.length}
+        </div>
+      );
+    }
+  }
+
   return (
-    <div
-      className="cart"
-    >
+    <div className="cart">
       <img className="cartIcon" src="/shopping-cart.png" alt="Shopping-Cart" />
-     {/* <div className="cartNotification">
-        {shoppingCart.length > 9 ? "9+" : shoppingCart.length}
-      </div>
-      {expanded ? isExpanded() : ""}
-  */}
+      {showNotificationNumber()}
     </div>
   );
 }

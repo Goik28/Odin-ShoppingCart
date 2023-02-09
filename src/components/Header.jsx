@@ -2,7 +2,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "./ShoppingCart";
 
-export function Header() {
+export function Header({ shoppingCart, setShoppingCart }) {
   return (
     <div className="navHeader">
       <header>
@@ -13,7 +13,10 @@ export function Header() {
         <Link to={"/"}>Home</Link>
         <Link to={"/products"}>Products</Link>
       </nav>
-      <ShoppingCart shoppingCart={[]}/>
+      <ShoppingCart
+        shoppingCart={shoppingCart}
+        setShoppingCart={setShoppingCart}
+      />
     </div>
   );
 }
