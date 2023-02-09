@@ -1,10 +1,10 @@
 import { Product } from "./Product";
-import "./Products.css";
+import "./Shop.css";
 
-export function Products({ productsList }) {
+export function Shop({ productsList, shoppingCart, setShoppingCart }) {
   return (
-    <main className="productsList">
-      <p className="productsPitch">
+    <main className="shopList">
+      <p className="shopPitch">
         Wanna change how are you feeling? Try one of our products!
       </p>
       <div className="clipPath"></div>

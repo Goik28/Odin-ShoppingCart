@@ -1,20 +1,20 @@
-.productsList {
+.shopList {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.productsList .productsPitch{
+.shopList .shopPitch{
     margin: 0;
     font-size: 2rem;
 }
 
-.productsList a{
+.shopList a{
     font-size: 0.8rem;
 }
 
-.productsList ul{
+.shopList ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -23,7 +23,7 @@
     margin: 15px 0 0 0;
 }
 
-.productsList .clipPath {
+.shopList .clipPath {
     position: absolute;
     z-index: -1;
     top: 50%;
