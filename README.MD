@@ -1,6 +1,7 @@
 # Shopping Cart
 
 - This is my take on the "Shopping Cart" project from "The Odin Project" course, Javascript path, React chapter.
+- You can access it here: [HERE](https://goik28.github.io/Odin-ShoppingCart").
 
 ## The Objective
 
