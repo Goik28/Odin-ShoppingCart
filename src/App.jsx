@@ -10,6 +10,7 @@ import { useState } from "react";
 export default function App() {
   const [shoppingCart, setShoppingCart] = useState([]);
 
+  // add basename="/Odin-ShoppingCart/" to BrowserRouter for deployment on gh-pages.
   return (
     <BrowserRouter>
       <Header shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />

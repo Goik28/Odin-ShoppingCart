@@ -1,7 +1,7 @@
 # Shopping Cart
 
 - This is my take on the "Shopping Cart" project from "The Odin Project" course, Javascript path, React chapter.
-- You can access it here: [HERE](https://goik28.github.io/Odin-ShoppingCart").
+- You can access it here: [HERE](https://goik28.github.io/Odin-ShoppingCart).
 
 ## The Objective
 
@@ -11,6 +11,7 @@
 
 ## Atribution
 
-- <a href="https://www.flaticon.com/free-icons/smart-cart" title="smart cart icons">Smart cart icons created by Freepik - Flaticon</a> \*<a href="https://www.flaticon.com/free-icons/human-emotions">
+- <a href="https://www.flaticon.com/free-icons/smart-cart" title="smart cart icons">Smart cart icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/human-emotions">
   Human emotions icons created by Freepik - Flaticon
   </a>

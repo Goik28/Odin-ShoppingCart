@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export function Home() {
@@ -14,7 +15,7 @@ export function Home() {
       <h2>
         Here, we <span>PRETEND</span> to sell fake stuff.
         <p className="checkItems">
-          <a href="/products"> Check our items!</a>
+          <Link to={"/products"}>Check our items!</Link>
         </p>
       </h2>
     </main>

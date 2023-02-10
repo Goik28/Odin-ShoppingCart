@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    src: "/angry.png",
+    src: "./assets/angry.png",
     alt: "Angry man",
     name: "Anger",
     description: "Description: Be angry with ANOTHER feeling.",
@@ -9,7 +9,7 @@ export const products = [
   },
   {
     id: 2,
-    src: "/confused.png",
+    src: "./assets/confused.png",
     alt: "Confused man",
     name: "Confusion",
     description: "Description: Be confused with ANOTHER feeling.",
@@ -17,7 +17,7 @@ export const products = [
   },
   {
     id: 3,
-    src: "/cry.png",
+    src: "./assets/cry.png",
     alt: "Sad man",
     name: "Sadness",
     description: "Description: Be sad with ANOTHER feeling.",
@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 4,
-    src: "/disappointed.png",
+    src: "./assets/disappointed.png",
     alt: "Disappointed man",
     name: "Disappointment",
     description: "Description: Be disappointed with ANOTHER feeling.",
@@ -33,7 +33,7 @@ export const products = [
   },
   {
     id: 5,
-    src: "/disgusted.png",
+    src: "./assets/disgusted.png",
     alt: "Disgusted man",
     name: "Disgust",
     description: "Description: Be disgusted with ANOTHER feeling.",

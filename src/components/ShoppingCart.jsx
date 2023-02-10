@@ -78,7 +78,7 @@ export function ShoppingCart({ shoppingCart, setShoppingCart }) {
 
   return (
     <div className="cart" onClick={expandHandler} onMouseLeave={leaveHandler}>
-      <img className="cartIcon" src="/shopping-cart.png" alt="Shopping-Cart" />
+      <img className="cartIcon" src="./assets/shopping-cart.png" alt="Shopping-Cart" />
       {showNotificationNumber()}
       {isExpanded()}
     </div>
