@@ -2,26 +2,68 @@ import { useState } from "react";
 import { CartItem } from "./CartItem";
 import "./ShoppingCart.css";
 
-export function ShoppingCart({ shoppingCart }) {
+export function ShoppingCart({ shoppingCart, setShoppingCart }) {
   const [expanded, setExpanded] = useState(false);
 
-  function isExpanded() {
+  function expandHandler(e) {
+    e.preventDefault();
+    setExpanded(!expanded);
+  }
+
+  function leaveHandler(e) {
+    e.preventDefault();
+    setExpanded(false);
+  }
+
+  function setQuantity(product, operator) {
+    const newArray = shoppingCart.concat([]);
+    const productIndex = newArray.findIndex((item) => item.id == product.id);
+    if (operator == "+") {
+      newArray[productIndex].quantity = newArray[productIndex].quantity + 1;
+      setShoppingCart(newArray);
+    } else {
+      newArray[productIndex].quantity = newArray[productIndex].quantity - 1;
+      if (newArray[productIndex].quantity == 0) {
+        newArray.splice(productIndex, 1);
+      }
+      setShoppingCart(newArray);
+    }
+  }
+
+  function calculateCartTotal() {
     return (
-      <div>
-        <ul>
-          {shoppingCart.map((item) => {
-            return (
-              <CartItem
-                key={item.product.id}
-                product={item.product}
-                quantity={item.quantity}
-              />
-            );
-          })}
-        </ul>
-        <button>Checkout</button>
-      </div>
+      "$" +
+      shoppingCart
+        .reduce((total, current) => {
+          return total + current.price * current.quantity;
+        }, 0)
+        .toFixed(2)
     );
+  }
+
+  function isExpanded() {
+    if (expanded) {
+      return (
+        <div className="expand">
+          <ul className="cartList">
+            {shoppingCart.map((item) => {
+              return (
+                <CartItem
+                  key={item.id}
+                  product={item}
+                  setQuantity={setQuantity}
+                />
+              );
+            })}
+          </ul>
+          <p className="cartTotal">
+            Cart Total:{" "}
+            <span className="totalValue">{calculateCartTotal()}</span>
+          </p>
+          <button>Checkout</button>
+        </div>
+      );
+    }
   }
 
   function showNotificationNumber() {
@@ -35,9 +77,10 @@ export function ShoppingCart({ shoppingCart }) {
   }
 
   return (
-    <div className="cart">
+    <div className="cart" onClick={expandHandler} onMouseLeave={leaveHandler}>
       <img className="cartIcon" src="/shopping-cart.png" alt="Shopping-Cart" />
       {showNotificationNumber()}
+      {isExpanded()}
     </div>
   );
 }

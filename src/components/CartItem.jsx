@@ -1,15 +1,26 @@
-export function CartItem({ product, quantity, setQuantity }) {
+import "./CartItem.css";
+
+export function CartItem({ product, setQuantity }) {
+  function quantityHandler(e) {
+    e.stopPropagation();
+    setQuantity(product, e.target.value);
+  }
+
   return (
-    <div>
+    <div className="cartItem">
       <img src={product.src} alt={product.alt} />
-      <div>
+      <div className="cartItemInfo">
         <p className="name">{product.name.toUpperCase()}</p>
-        <div>
-          <button onClick={setQuantity("-")}>-</button>
-          <p>{quantity}</p>
-          <button onClick={setQuantity("+")}>+</button>
+        <div className="cartItemControl">
+          <button onClick={quantityHandler} value={"-"}>
+            -
+          </button>
+          <p>{product.quantity}</p>
+          <button onClick={quantityHandler} value={"+"}>
+            +
+          </button>
         </div>
-        <p>Item total: {Number.parseInt(product.price) * quantity}</p>
+        <p>Item total: ${(product.price * product.quantity).toFixed(2)}</p>
       </div>
     </div>
   );

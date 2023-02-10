@@ -3,7 +3,15 @@ import "./Shop.css";
 
 export function Shop({ productsList, shoppingCart, setShoppingCart }) {
   function addProductToCart(product) {
-    setShoppingCart(shoppingCart.concat([product]));
+    const cartItem = { ...product, quantity: 1 };
+    if (shoppingCart.some((item) => item.id == cartItem.id)) {
+      const newArray = shoppingCart.concat([]);
+      newArray.find((item) => item.id == cartItem.id).quantity =
+        newArray.find((item) => item.id == cartItem.id).quantity + 1;
+      setShoppingCart(newArray);
+    } else {
+      setShoppingCart(shoppingCart.concat(cartItem));
+    }
   }
 
   return (
