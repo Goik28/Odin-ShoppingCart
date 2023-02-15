@@ -1,4 +1,4 @@
-import "./Product.css";
+import "./product.css";
 
 export function Product({ product, addProductToCart }) {
   function addHandler() {

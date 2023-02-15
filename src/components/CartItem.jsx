@@ -1,4 +1,4 @@
-import "./CartItem.css";
+import "./cartItem.css";
 
 export function CartItem({ product, setQuantity }) {
   function quantityHandler(e) {

@@ -1,5 +1,5 @@
 import { Product } from "./Product";
-import "./Shop.css";
+import "./shop.css";
 
 export function Shop({ productsList, shoppingCart, setShoppingCart }) {
   function addProductToCart(product) {

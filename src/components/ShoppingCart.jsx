@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CartItem } from "./CartItem";
-import "./ShoppingCart.css";
+import "./shoppingCart.css";
 
 export function ShoppingCart({ shoppingCart, setShoppingCart }) {
   const [expanded, setExpanded] = useState(false);
