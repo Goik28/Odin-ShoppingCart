@@ -20,7 +20,9 @@ export function Product({ product, addProductToCart }) {
         {product.name.toUpperCase()} - <span>{formatPrice(product.price)}</span>
       </p>
       <p className="description">{product.description}</p>
-      <button onClick={addHandler}>ADD TO CART</button>
+      <button title={"Add " + product.name + " to cart"} onClick={addHandler}>
+        ADD TO CART
+      </button>
     </div>
   );
 }
