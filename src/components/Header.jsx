@@ -11,7 +11,7 @@ export function Header({ shoppingCart, setShoppingCart }) {
       </header>
       <nav>
         <Link to={"/"}>Home</Link>
-        <Link to={"/products"}>Products</Link>
+        <Link title="Go to our products page" to={"/products"}>Products</Link>
       </nav>
       <ShoppingCart
         shoppingCart={shoppingCart}

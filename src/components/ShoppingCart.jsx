@@ -69,7 +69,7 @@ export function ShoppingCart({ shoppingCart, setShoppingCart }) {
   function showNotificationNumber() {
     if (shoppingCart.length > 0) {
       return (
-        <div className="cartNotification">
+        <div title="Number of items on cart" className="cartNotification">
           {shoppingCart.length > 9 ? "9+" : shoppingCart.length}
         </div>
       );
@@ -77,7 +77,7 @@ export function ShoppingCart({ shoppingCart, setShoppingCart }) {
   }
 
   return (
-    <div className="cart" onClick={expandHandler} onMouseLeave={leaveHandler}>
+    <div title="Shopping cart" className="cart" onClick={expandHandler} onMouseLeave={leaveHandler}>
       <img className="cartIcon" src="./assets/shopping-cart.png" alt="Shopping-Cart" />
       {showNotificationNumber()}
       {isExpanded()}

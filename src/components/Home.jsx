@@ -15,7 +15,7 @@ export function Home() {
       <h2>
         Here, we <span>PRETEND</span> to sell fake stuff.
         <p className="checkItems">
-          <Link to={"/products"}>Check our items!</Link>
+          <Link title="Go to our products page" to={"/products"}>Check our items!</Link>
         </p>
       </h2>
     </main>

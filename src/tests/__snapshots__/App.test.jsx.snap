@@ -28,12 +28,14 @@ exports[`App integration > Takes app snapshot 1`] = `
           </a>
           <a
             href="/products"
+            title="Go to our products page"
           >
             Products
           </a>
         </nav>
         <div
           class="cart"
+          title="Shopping cart"
         >
           <img
             alt="Shopping-Cart"
@@ -74,6 +76,7 @@ exports[`App integration > Takes app snapshot 1`] = `
           >
             <a
               href="/products"
+              title="Go to our products page"
             >
               Check our items!
             </a>
@@ -115,12 +118,14 @@ exports[`App integration > Takes app snapshot 1`] = `
         </a>
         <a
           href="/products"
+          title="Go to our products page"
         >
           Products
         </a>
       </nav>
       <div
         class="cart"
+        title="Shopping cart"
       >
         <img
           alt="Shopping-Cart"
@@ -161,6 +166,7 @@ exports[`App integration > Takes app snapshot 1`] = `
         >
           <a
             href="/products"
+            title="Go to our products page"
           >
             Check our items!
           </a>

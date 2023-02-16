@@ -12,11 +12,19 @@ export function CartItem({ product, setQuantity }) {
       <div className="cartItemInfo">
         <p className="name">{product.name.toUpperCase()}</p>
         <div className="cartItemControl">
-          <button onClick={quantityHandler} value={"-"}>
+          <button
+            title="Reduce one of this item"
+            onClick={quantityHandler}
+            value={"-"}
+          >
             -
           </button>
-          <p>{product.quantity}</p>
-          <button onClick={quantityHandler} value={"+"}>
+          <p title="Quantity">{product.quantity}</p>
+          <button
+            title="Add one of this item"
+            onClick={quantityHandler}
+            value={"+"}
+          >
             +
           </button>
         </div>
